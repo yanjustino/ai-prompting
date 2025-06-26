@@ -4,11 +4,11 @@
 
 A BioInnovate Corp., **uma empresa de biotecnologia** em crescimento, especializada no desenvolvimento de tratamentos para doenças crônicas!
 a empresa utiliza sistemas como:
-- Sistemas de Gestão de Informações de Laboratório (LIMS) para rastrear experimentos e amostras.
-- Sistemas de gerenciamento de ensaios clínicos para monitorar dados de pacientes e progresso de estudos.
-- Bancos de dados genômicos para armazenar e analisar dados genéticos.
-- Sistemas financeiros e de gerenciamento de projetos para acompanhar orçamentos e marcos.
-- Plataformas de colaboração para compartilhar descobertas com parceiros.
+- **Sistemas de Gestão de Informações de Laboratório (LIMS)** para rastrear experimentos e amostras.
+- **Sistemas de gerenciamento de ensaios clínicos** para monitorar dados de pacientes e progresso de estudos.
+- **Bancos de dados genômicos** para armazenar e analisar dados genéticos.
+- **Sistemas financeiros e de gerenciamento de projetos** para acompanhar orçamentos e marcos.
+- **Plataformas de colaboração** para compartilhar descobertas com parceiros.
 
 
 > [!CAUTION] 
