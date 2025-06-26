@@ -1,0 +1,87 @@
+graph TB
+    subgraph "External Systems"
+        LIMS[LIMS System]
+        CTS[Clinical Trials System]
+        GDB[Genomic Database]
+        FS[Financial System]
+        PMS[Project Management System]
+        CP[Collaboration Platform]
+    end
+
+    subgraph "Azure Cloud Environment"
+        subgraph "Data Integration Layer"
+            ADF[Azure Data Factory]
+            ASA[Azure Stream Analytics]
+        end
+
+        subgraph "Data Storage Layer"
+            DLH[Data Lakehouse<br/>Azure Synapse]
+        end
+
+        subgraph "Data Processing Layer"
+            SA[Azure Synapse Analytics]
+            ADB[Azure Databricks]
+        end
+
+        subgraph "API Layer"
+            APIG[API Gateway<br/>Azure API Management]
+        end
+
+        subgraph "Governance & Security"
+            AP[Azure Purview]
+            ASC[Azure Security Center]
+        end
+
+        subgraph "Analytics & BI"
+            PBI[Power BI]
+            ML[Machine Learning Services]
+        end
+    end
+
+    subgraph "Client Applications"
+        WEB[Web Applications]
+        MOB[Mobile Apps]
+        DASH[Dashboards]
+    end
+
+    LIMS --> ADF
+    CTS --> ADF
+    GDB --> ADF
+    FS --> ADF
+    PMS --> ADF
+    CP --> ADF
+
+    LIMS --> ASA
+    CTS --> ASA
+    GDB --> ASA
+
+    ADF --> DLH
+    ASA --> DLH
+
+    DLH --> SA
+    DLH --> ADB
+
+    SA --> APIG
+    ADB --> APIG
+    DLH --> APIG
+
+    APIG --> WEB
+    APIG --> MOB
+    APIG --> DASH
+
+    SA --> PBI
+    ADB --> ML
+    DLH --> PBI
+
+    AP --> DLH
+    ASC --> DLH
+    ASC --> APIG
+
+    style ADF fill:#e1f5fe
+    style ASA fill:#e1f5fe
+    style DLH fill:#f3e5f5
+    style SA fill:#e8f5e8
+    style ADB fill:#e8f5e8
+    style APIG fill:#fff3e0
+    style AP fill:#fce4ec
+    style ASC fill:#fce4ec
