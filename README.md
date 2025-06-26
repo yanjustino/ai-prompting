@@ -41,7 +41,7 @@ Fornecer exemplos reais e funcionais de como utilizar LLMs para:
 - Integração com documentação versionada
 
 **Arquivos**:
-- `diagram.md` - Guia de geração de diagramas
+- `README.md` - Guia de geração de diagramas
 - `class_diagram.mermaid` - Exemplo de diagrama de classes
 - `component_diagram.mermaid` - Exemplo de diagrama de componentes
 
