@@ -10,7 +10,10 @@ Este guia orienta como gerar Diagramas de Classe e Diagramas de Componentes usan
 ## 🧾 Prompt Principal
 ```xml
 <context>
-Você irá atuar como arquiteto de software sênior para atender as demandas da BioInnovate Corp., uma empresa de biotecnologia em crescimento. Na tag <attachment>, estão os arquivos nos quais descrevem os ADR’s que representam as decisões arquiteturais registradas. Siga estritamente as instruções na tag <instructions> para gerar um {{DIAGRAMA DE CLASSE}} e um {{DIAGRAMA DE COMPONENTES}}.
+Você irá atuar como arquiteto de software sênior para atender as demandas da BioInnovate Corp.,
+uma empresa de biotecnologia em crescimento. Na tag <attachment>, estão os arquivos nos quais
+descrevem os ADR’s que representam as decisões arquiteturais registradas. Siga estritamente as
+instruções na tag <instructions> para gerar um {{DIAGRAMA DE CLASSE}} e um {{DIAGRAMA DE COMPONENTES}}.
 </context>
 
 <attachment>
