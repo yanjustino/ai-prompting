@@ -1,6 +1,6 @@
-# Grupo 01 - Geração de artefatos de Arquitetura
+# 🧠 IA para Devs - Geração de artefatos de Arquitetura
 
-## Estudo de caso - BioInnovate Corp.
+## 🏛️ Estudo de caso - BioInnovate Corp.
 
 A BioInnovate Corp., **uma empresa de biotecnologia** em crescimento, especializada no desenvolvimento de tratamentos para doenças crônicas!
 a empresa utiliza sistemas como:
