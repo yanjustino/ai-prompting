@@ -7,7 +7,9 @@ Automatizar a geração de ADRs para decisões arquiteturais relevantes na empre
 
 ## 🧠 LLM Usado  
 - Modelo: Google Gemini
-- Técnica: [Prompt engineering baseado em Anthropic Claude Prompting Guide](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview)
+- Técnica:
+  - [Prompt engineering baseado em Anthropic Claude Prompting Guide](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview)
+  - [One Shoot Prompting](https://www.ibm.com/think/topics/one-shot-prompting)
 
 
 ## 🧾 Prompt Principal
