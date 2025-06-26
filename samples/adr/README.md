@@ -13,7 +13,12 @@ Automatizar a geração de ADRs para decisões arquiteturais relevantes na empre
 ## 🧾 Prompt Principal
 ```xml
 <context>
-Você irá atuar como arquiteto de software sênior para atender as demandas da BioInnovate Corp., uma empresa de biotecnologia em crescimento. Na tag <attachment>, está o arquivo no qual descreve os {{SISTEMAS}} utilizados e os {{PROBLEMAS}} os quais a empresa passa ao utilizar esses {{SISTEMAS}}. Siga estritamente as instruções na tag <instructions> para gerar um {{ADR}}. Um *Arquitetura Decision Record (ADR)* é um documento que descreve uma decisão arquitetural significativa tomada em um projeto de software, junto com o raciocínio por trás dela e o impacto que ela tem.
+Você irá atuar como arquiteto de software sênior para atender as demandas da BioInnovate Corp., uma empresa de
+biotecnologia em crescimento. Na tag <attachment>, está o arquivo no qual descreve os {{SISTEMAS}} utilizados e
+os {{PROBLEMAS}} os quais a empresa passa ao utilizar esses {{SISTEMAS}}. Siga estritamente as instruções na tag
+<instructions> para gerar um Arquitetura Decision Record ({{ADR}}), que é um documento que descreve uma decisão
+arquitetural significativa tomada em um projeto de software, junto com o raciocínio por trás dela e o impacto
+que ela tem.
 </context>
 
 <attachment>
