@@ -1,6 +1,19 @@
-# AI Prompting Examples
+# Grupo 01 - Geração de artefatos de Arquitetura
 
-Este repositório contém exemplos práticos e guias para utilização de prompts com Large Language Models (LLMs) em diferentes contextos de desenvolvimento de software. O objetivo é demonstrar técnicas eficazes de prompt engineering para automatizar tarefas complexas de arquitetura e documentação.
+##   Estudo de caso - BioInnovate Corp.
+
+A BioInnovate Corp., **uma empresa de biotecnologia** em crescimento, especializada no desenvolvimento de tratamentos para doenças crônicas!
+a empresa utiliza sistemas como:
+- Sistemas de Gestão de Informações de Laboratório (LIMS) para rastrear experimentos e amostras.
+- Sistemas de gerenciamento de ensaios clínicos para monitorar dados de pacientes e progresso de estudos.
+- Bancos de dados genômicos para armazenar e analisar dados genéticos.
+- Sistemas financeiros e de gerenciamento de projetos para acompanhar orçamentos e marcos.
+- Plataformas de colaboração para compartilhar descobertas com parceiros.
+
+
+> [!CAUTION] 
+> A BioInnovate Corp. **enfrenta desafios significativos na integração de dados**. Esses sistemas operam de forma isolada, criando silos de dados que dificultam o acesso a informações abrangentes.
+> Os principais problemas incluem: **Silos de Dados, Formatos Inconsistentes, Qualidade Deficiente, Escalabilidade, Falta de Insights em Tempo Real, Conformidade**.
 
 ## 🎯 Objetivo
 
