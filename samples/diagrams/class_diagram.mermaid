@@ -1,0 +1,127 @@
+classDiagram
+    class DataLakehouse {
+        +string storageAccount
+        +string containerName
+        +string accessKey
+        +storeData(data: byte[])
+        +retrieveData(path: string)
+        +deleteData(path: string)
+    }
+
+    class AzureDataFactory {
+        +string factoryName
+        +string resourceGroup
+        +createPipeline(pipeline: Pipeline)
+        +executePipeline(pipelineId: string)
+        +monitorPipeline(pipelineId: string)
+    }
+
+    class AzureSynapseAnalytics {
+        +string workspaceName
+        +string sqlPoolName
+        +executeQuery(query: string)
+        +createTable(tableSchema: Schema)
+        +processAnalytics(dataSet: DataSet)
+    }
+
+    class AzureDatabricks {
+        +string workspaceName
+        +string clusterId
+        +runNotebook(notebookPath: string)
+        +processMLWorkload(data: DataSet)
+        +distributedProcessing(job: Job)
+    }
+
+    class AzureStreamAnalytics {
+        +string jobName
+        +string inputSource
+        +string outputSink
+        +processRealTimeData(stream: DataStream)
+        +configureQuery(query: string)
+    }
+
+    class APIGateway {
+        +string gatewayUrl
+        +string subscriptionKey
+        +routeRequest(request: Request)
+        +authenticateUser(credentials: Credentials)
+        +rateLimit(userId: string)
+    }
+
+    class LIMSSystem {
+        +string systemId
+        +string connectionString
+        +getLaboratoryData()
+        +updateSampleData(sample: Sample)
+    }
+
+    class ClinicalTrialsSystem {
+        +string systemId
+        +string connectionString
+        +getTrialData()
+        +updatePatientData(patient: Patient)
+    }
+
+    class GenomicDatabase {
+        +string databaseId
+        +string connectionString
+        +getGenomicData()
+        +storeSequenceData(sequence: Sequence)
+    }
+
+    class FinancialSystem {
+        +string systemId
+        +string connectionString
+        +getFinancialData()
+        +updateBudgetData(budget: Budget)
+    }
+
+    class ProjectManagementSystem {
+        +string systemId
+        +string connectionString
+        +getProjectData()
+        +updateTaskData(task: Task)
+    }
+
+    class CollaborationPlatform {
+        +string platformId
+        +string connectionString
+        +getCollaborationData()
+        +shareDocument(document: Document)
+    }
+
+    class AzurePurview {
+        +string accountName
+        +string resourceGroup
+        +scanDataSource(source: DataSource)
+        +classifyData(data: Data)
+        +trackDataLineage(dataFlow: DataFlow)
+    }
+
+    class AzureSecurityCenter {
+        +string subscriptionId
+        +string resourceGroup
+        +monitorSecurity()
+        +generateSecurityReport()
+        +alertOnThreats(threat: Threat)
+    }
+
+    AzureDataFactory --> DataLakehouse
+    AzureDataFactory --> LIMSSystem
+    AzureDataFactory --> ClinicalTrialsSystem
+    AzureDataFactory --> GenomicDatabase
+    AzureDataFactory --> FinancialSystem
+    AzureDataFactory --> ProjectManagementSystem
+    AzureDataFactory --> CollaborationPlatform
+    
+    AzureSynapseAnalytics --> DataLakehouse
+    AzureDatabricks --> DataLakehouse
+    AzureStreamAnalytics --> DataLakehouse
+    
+    APIGateway --> AzureSynapseAnalytics
+    APIGateway --> AzureDatabricks
+    APIGateway --> AzureStreamAnalytics
+    
+    AzurePurview --> DataLakehouse
+    AzureSecurityCenter --> DataLakehouse
+    AzureSecurityCenter --> APIGateway
